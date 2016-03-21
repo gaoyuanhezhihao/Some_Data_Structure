@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1458542574 source:g:\study\datastructure algorithm\code\heap\leftistheap\main.cpp
+	<iostream>
+	<fstream>
+	"LeftistHeap.h"
+
+1458542721 g:\study\datastructure algorithm\code\heap\leftistheap\leftistheap.h
+	<cstddef>
+	<cstdlib>
+	<string>
+
