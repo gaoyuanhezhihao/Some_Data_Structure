@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1459337532 source:g:\study\datastructure algorithm\code\heap\skew heap\main.cpp
+	<iostream>
+	<fstream>
+	"skew_heap.h"
+
+1459338054 g:\study\datastructure algorithm\code\heap\skew heap\skew_heap.h
+	<cstddef>
+	<cstdlib>
+	<string>
+
