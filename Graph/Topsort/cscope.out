@@ -1,0 +1,919 @@
+cscope 15 $HOME/study/algorithm/Some_Data_Structure/Graph/Topsort -q 0000000076 0000004737
+	@include/TopSort.hpp
+
+1 #iâdeà
+TOPSORT_HPP
+
+
+2 
+	#TOPSORT_HPP
+
+
+	)
+
+3 
+	~<deque
+>
+
+4 
+	~<veùÜ
+>
+
+6 
+boÞ
+ 
+tÝ_sÜt
+(
+¡d
+::
+veùÜ
+<¡d::veùÜ<> > &
+g¿ph
+);
+
+	@include/graphviz_plot.hpp
+
+1 #iâdeà
+GRAPHVIZ_PLOT_HPP
+
+
+2 
+	#GRAPHVIZ_PLOT_HPP
+
+
+	)
+
+4 
+	~<¡ršg
+>
+
+5 
+	~<veùÜ
+>
+
+6 
+	~<f¡»am
+>
+
+7 
+	~<c¡dlib
+>
+
+8 
+	~<io¡»am
+>
+
+10 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+11 
+usšg
+ 
+	gG¿phD©aTy³
+ð
+¡d
+::
+veùÜ
+< std::vector<> >;
+
+12 þas 
+	cPlÙR‘
+{
+
+13 
+	msucûss
+,
+
+14 
+	mçž_to_Ý’_fže
+,
+
+17 
+PlÙR‘
+ 
+¶Ù_g¿ph
+(
+G¿phD©aTy³
+ cÚ¡ & 
+g¿ph
+, cÚ¡ 
+fže_Çme
+[], cÚ¡ 
+¡ršg
+ 
+Çme_g¿ph
+);
+
+19 þas 
+	cG¿phPlÙ”
+{
+
+20 
+	m´iv©e
+:
+
+21 
+¡d
+::
+¡ršg
+ 
+Çme_¡r
+;
+
+22 
+	m¡d
+::
+of¡»am
+ 
+fže_¡»am
+;
+
+23 
+	mpublic
+:
+
+24 
+G¿phPlÙ”
+(cÚ¡ * 
+Çme
+);
+
+25 
+boÞ
+ 
+add_lše
+(
+l
+, 
+r
+);
+
+26 ~
+G¿phPlÙ”
+();
+
+	@src/TopSort.cpp
+
+1 
+	~"TÝSÜt.hµ
+"
+
+2 
+	~<veùÜ
+>
+
+3 
+	~<io¡»am
+>
+
+4 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+5 
+boÞ
+ 
+ÿlc_v”‹x_šfo
+(
+¡d
+::
+veùÜ
+<¡d::veùÜ<> > &
+g¿ph
+, std::veùÜ<¡d::veùÜ<> > & 
+v”‹x_Ãib
+, std::veùÜ<> & 
+v”‹x_»f_couÁ
+);
+
+6 
+boÞ
+ 
+fšd_Ãw_v”‹x
+(
+¡d
+::
+veùÜ
+<> & 
+v”‹x_»f_couÁ
+, 
+deque
+<> & 
+Ãxt_v”‹xes
+);
+
+8 
+boÞ
+ 
+tÝ_sÜt
+(
+¡d
+::
+veùÜ
+<¡d::veùÜ<> > &
+g¿ph
+) {
+
+9 if(
+g¿ph
+.
+size
+() == 0) {
+
+10 
+cout
+ << "!E¼Ü: g¿ph siziàz”o" << 
+’dl
+;
+
+12 
+	g¡d
+::
+deque
+<> 
+Ãxt_v”‹xes
+;
+
+13 
+	g¡d
+::
+veùÜ
+<
+¡d
+::veùÜ<> > 
+v”‹x_Ãib
+(
+g¿ph
+.
+size
+(), vector<> ());
+
+14 
+	g¡d
+::
+veùÜ
+<> 
+v”‹x_»f_couÁ
+(
+g¿ph
+.
+size
+(), 0);
+
+17 
+ÿlc_v”‹x_šfo
+(
+g¿ph
+, 
+v”‹x_Ãib
+, 
+v”‹x_»f_couÁ
+);
+
+19 
+fšd_Ãw_v”‹x
+(
+v”‹x_»f_couÁ
+, 
+Ãxt_v”‹xes
+);
+
+20 
+size_t
+ 
+	gv”‹x_couÁ
+ = 0;
+
+21 
+	gçl£
+ =ð
+Ãxt_v”‹xes
+.
+em±y
+()) {
+
+22 
+Ãw_v
+ = 
+Ãxt_v”‹xes
+[0];
+
+23 ++ 
+	gv”‹x_couÁ
+;
+
+24 
+	gÃxt_v”‹xes
+.
+pÝ_äÚt
+();
+
+26 
+	gveùÜ
+<> & 
+	gÃib_id
+ = 
+v”‹x_Ãib
+[
+Ãw_v
+];
+
+27 
+size_t
+ 
+	gj
+ = 0;
+
+28 
+	gtmp_id
+ = 0;
+
+29 
+	gj
+ð0; j< 
+	gÃib_id
+.
+size
+();++j) {
+
+30 
+	gtmp_id
+ = 
+Ãib_id
+[
+j
+];
+
+31 if(
+	gv”‹x_»f_couÁ
+[
+tmp_id
+] > 0) {
+
+32 
+	gv”‹x_»f_couÁ
+[
+tmp_id
+] --;
+
+34 if(
+	gv”‹x_»f_couÁ
+[
+tmp_id
+] == 0) {
+
+35 
+Ãxt_v”‹xes
+.
+push_back
+(
+tmp_id
+);
+
+36 
+	gv”‹x_»f_couÁ
+[
+tmp_id
+] = -1;
+
+37 
+	gcout
+ << "* " << 
+	gtmp_id
+ << " ";
+
+40 
+	gcout
+ << " | ";
+
+42 if(
+	gv”‹x_couÁ
+ !ð
+g¿ph
+.
+size
+()) {
+
+43 
+cout
+ << "!WARNING:h”i cœþšhi g¿ph" << 
+’dl
+;
+
+45  
+	gŒue
+;
+
+48 
+boÞ
+ 
+ÿlc_v”‹x_šfo
+(
+¡d
+::
+veùÜ
+<¡d::veùÜ<> > &
+g¿ph
+, std::veùÜ<¡d::veùÜ<> > & 
+v”‹x_Ãib
+, std::veùÜ<> & 
+v”‹x_»f_couÁ
+) {
+
+49 if(
+g¿ph
+.
+size
+() == 0 || graph[0].size() == 0 || graph.size() != graph[0].size()) {
+
+50 
+¡d
+::
+cout
+ << "!E¼Ü: g¿ph fÜm© i wrÚg..." << std::
+’dl
+;
+
+51 
+ex™
+(-1);
+
+53 
+size_t
+ 
+	gr
+ð0, 
+	gc
+=0;
+
+54 
+	gr
+=0;r<
+	gg¿ph
+.
+size
+();++r) {
+
+55 
+	gc
+=0;c<
+	gg¿ph
+[0].
+size
+();++c) {
+
+56 if(
+	gg¿ph
+[
+r
+][
+c
+] > 0 ) {
+
+57 
+	gv”‹x_»f_couÁ
+[
+c
+] ++;
+
+58 
+	gv”‹x_Ãib
+[
+r
+].
+push_back
+(
+c
+);
+
+62  
+	gŒue
+;
+
+65 
+boÞ
+ 
+fšd_Ãw_v”‹x
+(
+¡d
+::
+veùÜ
+<> & 
+v”‹x_»f_couÁ
+, 
+deque
+<> & 
+Ãxt_v”‹xes
+) {
+
+66 
+size_t
+ 
+	gi
+ =0;
+
+67 
+boÞ
+ 
+	gfound_ªy
+ = 
+çl£
+;
+
+68 
+	gi
+=0; i< 
+	gv”‹x_»f_couÁ
+.
+size
+(); ++i ) {
+
+69 if(
+	gv”‹x_»f_couÁ
+[
+i
+] == 0) {
+
+70 
+Ãxt_v”‹xes
+.
+push_back
+(
+i
+);
+
+71 
+	gv”‹x_»f_couÁ
+[
+i
+] = -1;
+
+72 
+	gcout
+ << "*"<< 
+	gi
+<<" ";
+
+73 
+	gfound_ªy
+ = 
+Œue
+;
+
+76 
+	gcout
+ << " | " ;
+
+77  
+	gfound_ªy
+;
+
+	@src/graphviz_plot.cpp
+
+1 
+	~"g¿phviz_¶Ù.hµ
+"
+
+3 
+PlÙR‘
+ 
+	$¶Ù_g¿ph
+(
+G¿phD©aTy³
+ cÚ¡ & 
+g¿ph
+, cÚ¡ 
+fže_Çme
+[], cÚ¡ 
+¡ršg
+ 
+Çme_g¿ph
+) {
+
+4 
+¡d
+::
+of¡»am
+ 
+	`fže_¡»am
+(
+fže_Çme
+);
+
+5 if(
+çl£
+ =ð
+fže_¡»am
+.
+	`is_Ý’
+()) {
+
+6  
+PlÙR‘
+::
+çž_to_Ý’_fže
+;
+
+8 
+fže_¡»am
+ << "dig¿ph " << 
+Çme_g¿ph
+ << "{\n";
+
+9 
+couÁ
+ = 
+g¿ph
+.
+	`size
+();
+
+10 
+r
+=0;
+
+11 
+c
+=0;
+
+12 
+cout
+ << 
+couÁ
+<< 
+’dl
+;
+
+13 
+r
+=0;r<
+couÁ
+; ++„) {
+
+14 
+cout
+ <<
+g¿ph
+[
+r
+].
+	`size
+(è<< 
+’dl
+;
+
+15 
+c
+=0;c<
+couÁ
+;++c) {
+
+17 if(
+g¿ph
+[
+r
+][
+c
+] > 0){
+
+18 
+fže_¡»am
+ << 
+r
++1 << "->" << 
+c
++1 << "\n";
+
+22 
+fže_¡»am
+ << "}" << 
+’dl
+;
+
+23 
+¡ršg
+ 
+cmd
+{"dot -Tpng "};
+
+24 
+cmd
+ +ð
+fže_Çme
+;
+
+25 
+cmd
+ +ð(" -Ø./"+ 
+Çme_g¿ph
+ + ".png");
+
+26 
+¡d
+::
+cout
+ << 
+cmd
+ << 
+’dl
+;
+
+27 
+	`sy¡em
+(
+cmd
+.
+	`c_¡r
+());
+
+28  
+PlÙR‘
+::
+sucûss
+;
+
+29 
+	}
+}
+
+	@src/main.cpp
+
+1 
+	~<io¡»am
+>
+
+2 
+	~<f¡»am
+>
+
+3 
+	~<¡ršg
+>
+
+4 
+	~<s¡»am
+>
+
+5 
+	~<veùÜ
+>
+
+6 
+	~<™”©Ü
+>
+
+7 
+	~"g¿phviz_¶Ù.hµ
+"
+
+8 
+	~"TÝSÜt.hµ
+"
+
+9 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+10 
+	$maš
+(
+¬gc
+, ** 
+¬gv
+) {
+
+11 
+¡d
+::
+if¡»am
+ 
+	`šFže
+(
+¬gv
+[1]);
+
+12 
+¡d
+::
+¡ršg
+ 
+lše
+;
+
+13 
+¡d
+::
+veùÜ
+<veùÜ<> > 
+g¿ph
+;
+
+14 if(
+¬gc
+ < 2) {
+
+15 
+¡d
+::
+cout
+ << "E¼Ü: AˆL—¡ TwØArgum’ts." << 
+’dl
+;
+
+16 
+	`ex™
+(-1);
+
+18 if(
+šFže
+.
+	`is_Ý’
+()) {
+
+19 
+¡d
+::
+	`g‘lše
+(
+šFže
+, 
+lše
+)) {
+
+20 
+¡d
+::
+i¡ršg¡»am
+ 
+	`iss
+(
+lše
+);
+
+21 
+veùÜ
+<> 
+v”‹x
+{
+¡d
+::
+i¡»am_™”©Ü
+<>{
+iss
+}, std::istream_iterator<>{}};
+
+22 
+g¿ph
+.
+	`push_back
+(
+¡d
+::
+	`move
+(
+v”‹x
+));
+
+26 
+¡d
+::
+û¼
+<< "çžedØÝ’ fže." << std::
+’dl
+;
+
+29 
+	`tÝ_sÜt
+(
+g¿ph
+);
+
+41 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+5
+97
+include/TopSort.hpp
+include/graphviz_plot.hpp
+src/TopSort.cpp
+src/graphviz_plot.cpp
+src/main.cpp

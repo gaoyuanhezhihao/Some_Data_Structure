@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUILDDIR	makefile	/^BUILDDIR := build$/;"	m
+CC	makefile	/^CC :=clang++$/;"	m
+CFLAGS	makefile	/^CFLAGS:= -std=c++11 $/;"	m
+Dijkstra	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^std::vector<Vertex> Dijkstra(GraphMat & graph, int id_start);$/;"	p	language:C++
+Dijkstra	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^vector<Vertex> Dijkstra(GraphMat & graph, int id_start) {$/;"	f	language:C++
+DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	access:public
+FlagsForFile	.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	access:public
+GRAPHVIZ_PLOT_HPP	include/graphviz_plot.h	2;"	d
+GetCompilationInfoForFile	.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f	access:public
+GraphPloter	include/graphviz_plot.h	/^        GraphPloter(const char * name);$/;"	p	class:GraphPloter	access:public	signature:(const char * name)
+GraphPloter	include/graphviz_plot.h	/^class GraphPloter{$/;"	c
+GraphPloter::GraphPloter	include/graphviz_plot.h	/^        GraphPloter(const char * name);$/;"	p	class:GraphPloter	access:public	signature:(const char * name)
+GraphPloter::add_line	include/graphviz_plot.h	/^        bool add_line(int l, int r);$/;"	p	class:GraphPloter	access:public	signature:(int l, int r)
+GraphPloter::file_stream	include/graphviz_plot.h	/^        std::ofstream file_stream;$/;"	m	class:GraphPloter	access:private
+GraphPloter::name_str	include/graphviz_plot.h	/^        std::string name_str;$/;"	m	class:GraphPloter	access:private
+GraphPloter::~GraphPloter	include/graphviz_plot.h	/^        ~GraphPloter();$/;"	p	class:GraphPloter	access:public	signature:()
+INC	makefile	/^INC:= -I include$/;"	m
+IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	access:public
+LD	makefile	/^LD :=clang++$/;"	m
+LDFLAGS	makefile	/^LDFLAGS:= $/;"	m
+MakeRelativePathsInFlagsAbsolute	.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	access:public
+OBJECTS	makefile	/^OBJECTS:=$(patsubst $(SRCDIR)\/%, $(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+PlotRet	include/graphviz_plot.h	/^enum class PlotRet{$/;"	c
+PlotRet::fail_to_open_file	include/graphviz_plot.h	/^    fail_to_open_file,$/;"	m	class:PlotRet	access:private
+PlotRet::success	include/graphviz_plot.h	/^    success,$/;"	m	class:PlotRet	access:private
+SHORTEST_PATH_HPP	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	2;"	d	language:C++
+SOURCES	makefile	/^SOURCES:=$(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm', '.py' ]$/;"	v
+SRCDIR	makefile	/^SRCDIR := src$/;"	m
+SRCEXT	makefile	/^SRCEXT:=cpp$/;"	m
+TARGET	makefile	/^TARGET :=bin\/runner$/;"	m
+Vertex	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^struct Vertex{$/;"	s	language:C++
+add_line	include/graphviz_plot.h	/^        bool add_line(int l, int r);$/;"	p	class:GraphPloter	access:public	signature:(int l, int r)
+calc_vertex_info	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^bool calc_vertex_info(std::vector<std::vector<int> > &graph, std::vector<std::vector<int> > & vertex_neib) {$/;"	f	language:C++
+compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+database	.ycm_extra_conf.py	/^  database = None$/;"	v
+database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+dist	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^    int dist = std::numeric_limits<int>::max();$/;"	m	language:C++	struct:Vertex
+fail_to_open_file	include/graphviz_plot.h	/^    fail_to_open_file,$/;"	m	class:PlotRet	access:private
+file_stream	include/graphviz_plot.h	/^        std::ofstream file_stream;$/;"	m	class:GraphPloter	access:private
+find_min_dist_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^int find_min_dist_id(const std::vector<Vertex> & vt_path);$/;"	p	language:C++
+find_min_dist_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^int find_min_dist_id(const vector<Vertex> & vt_path) {$/;"	f	language:C++
+flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+known	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^    bool known = false;$/;"	m	language:C++	struct:Vertex
+main	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^int main(int argc, char ** argv) {$/;"	f	language:C++
+main	src/main.cpp	/^int main(int argc, char ** argv) {$/;"	f	signature:(int argc, char ** argv)
+name_str	include/graphviz_plot.h	/^        std::string name_str;$/;"	m	class:GraphPloter	access:private
+plot_graph	include/graphviz_plot.h	/^PlotRet plot_graph(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes);$/;"	p	signature:(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes)
+plot_graph	src/graphviz_plot.cpp	/^PlotRet plot_graph(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes) {$/;"	f	signature:(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes)
+prev_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^    int prev_id = -1;$/;"	m	language:C++	struct:Vertex
+print_all_pathes	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^bool print_all_pathes(std::vector<Vertex> & vt_path, std::vector<std::string> name_vtxes);$/;"	p	language:C++
+print_all_pathes	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^bool print_all_pathes(vector<Vertex> & vt_path, vector<string> name_vtxes) {$/;"	f	language:C++
+print_graph_mat	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^void print_graph_mat(GraphMat & graph) {$/;"	f	language:C++
+print_graph_mat	src/main.cpp	/^void print_graph_mat(GraphMat & graph) {$/;"	f	signature:(GraphMat & graph)
+read_graph	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^bool read_graph(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes) {$/;"	f	language:C++
+read_graph	src/main.cpp	/^bool read_graph(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes) {$/;"	f	signature:(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes)
+success	include/graphviz_plot.h	/^    success,$/;"	m	class:PlotRet	access:private
+unweighted	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^std::vector<Vertex> unweighted(GraphMat &graph, int id_start);$/;"	p	language:C++
+unweighted	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^vector<Vertex> unweighted(GraphMat &graph, int id_start) {$/;"	f	language:C++
+~GraphPloter	include/graphviz_plot.h	/^        ~GraphPloter();$/;"	p	class:GraphPloter	access:public	signature:()
