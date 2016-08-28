@@ -3,6 +3,7 @@
 #include <deque>
 #include <iostream>
 #include <limits>
+#include "BinaryHeap.h"
 using namespace std;
 using GraphMat = std::vector<vector<int> >;
 // -------function declare-----------------------------
@@ -50,6 +51,43 @@ bool calc_vertex_info(std::vector<std::vector<int> > &graph, std::vector<std::ve
     return true;
 }
 
+vector<Vertex> Dijkstra_heap(GraphMat &graph, int id_start) {
+    //-- #1 init.
+    vector<Vertex> vt_path(graph.size(), Vertex());
+    vt_path[id_start].dist = 0;
+    vt_path[id_start].known = false; 
+    vt_path[id_start].prev_id = -1;
+    vector<vector<int> > vert_neib(graph.size(), vector<int> ());
+    calc_vertex_info(graph, vert_neib);
+    size_t i = 0;
+    /*build heap*/
+    vector<HeapVt> tmp_data={HeapVt(0, id_start)};
+    BinaryHeap<HeapVt> heap_vt(tmp_data) ;
+    heap_vt.print();
+    //-- #2  interate every vertex.
+    for(i = 0; i< graph.size(); ++i) {
+        int id_next = find_min_dist_id(heap_vt, vt_path);
+        if(-1 == id_next) {
+            cout << "!WARNING: There is isolated part." << endl;
+            break;
+        }
+        vt_path[id_next].known = true;
+        for(auto & n:vert_neib[id_next]) {
+            int neib_dist = graph[id_next][n];
+            if(false == vt_path[n].known){
+                if(vt_path[n].dist > vt_path[id_next].dist + neib_dist){
+                    vt_path[n].dist = vt_path[id_next].dist + neib_dist;
+                    vt_path[n].prev_id = id_next;
+                    heap_vt.insert(HeapVt(vt_path[n].dist, n));
+                }
+            }
+
+        }
+        heap_vt.print();
+    }
+    return vt_path;
+
+}
 vector<Vertex> Dijkstra(GraphMat & graph, int id_start) {
     vector<Vertex> vt_path(graph.size(), Vertex());
     vt_path[id_start].dist = 0;
@@ -64,7 +102,7 @@ vector<Vertex> Dijkstra(GraphMat & graph, int id_start) {
         /*find unknown vertex with min dist.*/
         id_min_dist = find_min_dist_id(vt_path);
         if(-1 == id_min_dist) {
-            cout << "!WARNING: There is circle in the Graph" << endl;
+            cout << "!WARNING: There is isolated part" << endl;
             break;
         }
         vt_path[id_min_dist].known = true;
@@ -106,4 +144,19 @@ int find_min_dist_id(const vector<Vertex> & vt_path) {
         }
     }
     return id_min;
+}
+int find_min_dist_id(BinaryHeap<HeapVt> & heap_vt, const vector<Vertex> & vt_path) {
+    HeapVt tmp_vt(-1, -1);
+    do{
+        if(heap_vt.isEmpty()) {
+            return -1;
+        }
+        heap_vt.deleteMin(tmp_vt);
+    }while(true == vt_path[tmp_vt.id].known);
+    return tmp_vt.id;
+}
+
+std::ostream & operator << (std::ostream & output, const HeapVt &data ) {
+    output << '(' << data.dist<< ',' << data.id<< ')'; 
+    return output;
 }

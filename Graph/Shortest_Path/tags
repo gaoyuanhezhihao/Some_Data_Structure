@@ -4,11 +4,20 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-BUILDDIR	makefile	/^BUILDDIR := build$/;"	m
-CC	makefile	/^CC :=clang++$/;"	m
-CFLAGS	makefile	/^CFLAGS:= -std=c++11 $/;"	m
+BINARY_HEAP_H	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	2;"	d	language:C++
+BUILDDIR	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^BUILDDIR := build$/;"	m	language:Make
+BinaryHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	explicit BinaryHeap(const std::vector<Comparable> & items);$/;"	p	language:C++	class:BinaryHeap
+BinaryHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	explicit BinaryHeap(int capacity = 100);$/;"	p	language:C++	class:BinaryHeap
+BinaryHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^BinaryHeap<Comparable>::BinaryHeap( const vector<Comparable> & items )$/;"	f	language:C++	class:BinaryHeap
+BinaryHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^class BinaryHeap$/;"	c	language:C++
+BinaryHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/BinaryHeap.cpp	/^explicit BinaryHeap<Comparable>::BinaryHeap( const vector<Comparable> & items )$/;"	f	language:C++	class:BinaryHeap
+CC	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^CC :=clang++$/;"	m	language:Make
+CFLAGS	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^CFLAGS:= -std=c++11 $/;"	m	language:Make
+DIJKSTRA_HEAP	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	11;"	d	language:C++	file:
 Dijkstra	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^std::vector<Vertex> Dijkstra(GraphMat & graph, int id_start);$/;"	p	language:C++
 Dijkstra	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^vector<Vertex> Dijkstra(GraphMat & graph, int id_start) {$/;"	f	language:C++
+Dijkstra_heap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^std::vector<Vertex> Dijkstra_heap(GraphMat &graph, int id_start);$/;"	p	language:C++
+Dijkstra_heap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^vector<Vertex> Dijkstra_heap(GraphMat &graph, int id_start) {$/;"	f	language:C++
 DirectoryOfThisScript	.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	access:public
 FlagsForFile	.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	access:public
 GRAPHVIZ_PLOT_HPP	include/graphviz_plot.h	2;"	d
@@ -20,46 +29,82 @@ GraphPloter::add_line	include/graphviz_plot.h	/^        bool add_line(int l, int
 GraphPloter::file_stream	include/graphviz_plot.h	/^        std::ofstream file_stream;$/;"	m	class:GraphPloter	access:private
 GraphPloter::name_str	include/graphviz_plot.h	/^        std::string name_str;$/;"	m	class:GraphPloter	access:private
 GraphPloter::~GraphPloter	include/graphviz_plot.h	/^        ~GraphPloter();$/;"	p	class:GraphPloter	access:public	signature:()
-INC	makefile	/^INC:= -I include$/;"	m
+HEADERS	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^HEADERS:=$(shell find $(HEADER_DIR) -type f -name *.$(INCEXT))$/;"	m	language:Make
+HEADER_DIR	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^HEADER_DIR := include$/;"	m	language:Make
+HeapVt	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        HeapVt():dist(-1), id(-1){}$/;"	f	language:C++	class:HeapVt
+HeapVt	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        HeapVt(const HeapVt& brother) {$/;"	f	language:C++	class:HeapVt
+HeapVt	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        HeapVt(int d, int i):dist(d), id(i){ }$/;"	f	language:C++	class:HeapVt
+HeapVt	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^class HeapVt{$/;"	c	language:C++
+INC	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^INC:= -I include$/;"	m	language:Make
+INCEXT	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^INCEXT:=h$/;"	m	language:Make
 IsHeaderFile	.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	access:public
-LD	makefile	/^LD :=clang++$/;"	m
-LDFLAGS	makefile	/^LDFLAGS:= $/;"	m
+LD	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^LD :=clang++$/;"	m	language:Make
+LDFLAGS	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^LDFLAGS:= $/;"	m	language:Make
 MakeRelativePathsInFlagsAbsolute	.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	access:public
-OBJECTS	makefile	/^OBJECTS:=$(patsubst $(SRCDIR)\/%, $(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m
+OBJECTS	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^OBJECTS:=$(patsubst $(SRCDIR)\/%, $(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m	language:Make
 PlotRet	include/graphviz_plot.h	/^enum class PlotRet{$/;"	c
 PlotRet::fail_to_open_file	include/graphviz_plot.h	/^    fail_to_open_file,$/;"	m	class:PlotRet	access:private
 PlotRet::success	include/graphviz_plot.h	/^    success,$/;"	m	class:PlotRet	access:private
 SHORTEST_PATH_HPP	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	2;"	d	language:C++
-SOURCES	makefile	/^SOURCES:=$(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m
+SOURCES	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^SOURCES:=$(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m	language:Make
 SOURCE_EXTENSIONS	.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm', '.py' ]$/;"	v
-SRCDIR	makefile	/^SRCDIR := src$/;"	m
-SRCEXT	makefile	/^SRCEXT:=cpp$/;"	m
-TARGET	makefile	/^TARGET :=bin\/runner$/;"	m
+SRCDIR	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^SRCDIR := src$/;"	m	language:Make
+SRCEXT	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^SRCEXT:=cpp$/;"	m	language:Make
+TARGET	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/makefile	/^TARGET :=bin\/runner$/;"	m	language:Make
 Vertex	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^struct Vertex{$/;"	s	language:C++
 add_line	include/graphviz_plot.h	/^        bool add_line(int l, int r);$/;"	p	class:GraphPloter	access:public	signature:(int l, int r)
+array	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^    std::vector<Comparable> array;$/;"	m	language:C++	class:BinaryHeap
+buildHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^    void buildHeap();$/;"	p	language:C++	class:BinaryHeap
+buildHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^void BinaryHeap<Comparable>::buildHeap()$/;"	f	language:C++	class:BinaryHeap
+buildHeap	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/BinaryHeap.cpp	/^void BinaryHeap<Comparable>::buildHeap()$/;"	f	language:C++	class:BinaryHeap
 calc_vertex_info	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^bool calc_vertex_info(std::vector<std::vector<int> > &graph, std::vector<std::vector<int> > & vertex_neib) {$/;"	f	language:C++
 compilation_database_folder	.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v
+currentSize	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	int currentSize;$/;"	m	language:C++	class:BinaryHeap
 database	.ycm_extra_conf.py	/^  database = None$/;"	v
 database	.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v
+deleteMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	void deleteMin( Comparable & minItem);$/;"	p	language:C++	class:BinaryHeap
+deleteMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	void deleteMin();$/;"	p	language:C++	class:BinaryHeap
+deleteMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^void BinaryHeap<Comparable>::deleteMin()$/;"	f	language:C++	class:BinaryHeap
+deleteMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^void BinaryHeap<Comparable>::deleteMin(Comparable &minItem)$/;"	f	language:C++	class:BinaryHeap
+deleteMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/BinaryHeap.cpp	/^void BinaryHeap<Comparable>::deleteMin()$/;"	f	language:C++	class:BinaryHeap
+deleteMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/BinaryHeap.cpp	/^void BinaryHeap<Comparable>::deleteMin(Comparable &minItem)$/;"	f	language:C++	class:BinaryHeap
+dist	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        int dist;$/;"	m	language:C++	class:HeapVt
 dist	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^    int dist = std::numeric_limits<int>::max();$/;"	m	language:C++	struct:Vertex
 fail_to_open_file	include/graphviz_plot.h	/^    fail_to_open_file,$/;"	m	class:PlotRet	access:private
 file_stream	include/graphviz_plot.h	/^        std::ofstream file_stream;$/;"	m	class:GraphPloter	access:private
+findMin	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	const Comparable & findMin() const;$/;"	p	language:C++	class:BinaryHeap
+find_min_dist_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^int find_min_dist_id(BinaryHeap<HeapVt> & heap_vt, const vector<Vertex> & vt_path);$/;"	p	language:C++
 find_min_dist_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^int find_min_dist_id(const std::vector<Vertex> & vt_path);$/;"	p	language:C++
+find_min_dist_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^int find_min_dist_id(BinaryHeap<HeapVt> & heap_vt, const vector<Vertex> & vt_path) {$/;"	f	language:C++
 find_min_dist_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^int find_min_dist_id(const vector<Vertex> & vt_path) {$/;"	f	language:C++
 flags	.ycm_extra_conf.py	/^flags = [$/;"	v
+id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        int id;$/;"	m	language:C++	class:HeapVt
+insert	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	void insert( const Comparable & x);$/;"	p	language:C++	class:BinaryHeap
+insert	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^    void insert(const Comparable && x);$/;"	p	language:C++	class:BinaryHeap
+insert	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^void BinaryHeap<Comparable>::insert(const Comparable && x)$/;"	f	language:C++	class:BinaryHeap
+insert	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/BinaryHeap.cpp	/^void BinaryHeap<Comparable>::insert(const Comparable & x)$/;"	f	language:C++	class:BinaryHeap
+isEmpty	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^    bool isEmpty() const {$/;"	f	language:C++	class:BinaryHeap
 known	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^    bool known = false;$/;"	m	language:C++	struct:Vertex
 main	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^int main(int argc, char ** argv) {$/;"	f	language:C++
-main	src/main.cpp	/^int main(int argc, char ** argv) {$/;"	f	signature:(int argc, char ** argv)
+makeEmpty	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^	void makeEmpty();$/;"	p	language:C++	class:BinaryHeap
 name_str	include/graphviz_plot.h	/^        std::string name_str;$/;"	m	class:GraphPloter	access:private
+operator <	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        bool operator <(const HeapVt & rhs) const {$/;"	f	language:C++	class:HeapVt
+operator <<	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^std::ostream & operator << (std::ostream & output, const HeapVt &data );$/;"	p	language:C++
+operator <<	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^std::ostream & operator << (std::ostream & output, const HeapVt &data ) {$/;"	f	language:C++
+operator >	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^        bool operator >(const HeapVt & rhs) const {$/;"	f	language:C++	class:HeapVt
+percolateDown	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^    void percolateDown( int hole );$/;"	p	language:C++	class:BinaryHeap
+percolateDown	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^void BinaryHeap<Comparable>::percolateDown(int hole)$/;"	f	language:C++	class:BinaryHeap
+percolateDown	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/BinaryHeap.cpp	/^void BinaryHeap<Comparable>::percolateDown(int hole)$/;"	f	language:C++	class:BinaryHeap
 plot_graph	include/graphviz_plot.h	/^PlotRet plot_graph(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes);$/;"	p	signature:(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes)
 plot_graph	src/graphviz_plot.cpp	/^PlotRet plot_graph(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes) {$/;"	f	signature:(GraphDataType const & graph, const char file_name[], const string name_graph, vector<string> & name_vtxes)
 prev_id	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^    int prev_id = -1;$/;"	m	language:C++	struct:Vertex
+print	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^    void print();$/;"	p	language:C++	class:BinaryHeap
+print	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/BinaryHeap.h	/^void BinaryHeap<Comparable>::print() {$/;"	f	language:C++	class:BinaryHeap
 print_all_pathes	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^bool print_all_pathes(std::vector<Vertex> & vt_path, std::vector<std::string> name_vtxes);$/;"	p	language:C++
 print_all_pathes	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^bool print_all_pathes(vector<Vertex> & vt_path, vector<string> name_vtxes) {$/;"	f	language:C++
 print_graph_mat	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^void print_graph_mat(GraphMat & graph) {$/;"	f	language:C++
-print_graph_mat	src/main.cpp	/^void print_graph_mat(GraphMat & graph) {$/;"	f	signature:(GraphMat & graph)
+print_graph_mat	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^void print_graph_mat(GraphMat & graph);$/;"	p	language:C++	file:
 read_graph	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/main.cpp	/^bool read_graph(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes) {$/;"	f	language:C++
-read_graph	src/main.cpp	/^bool read_graph(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes) {$/;"	f	signature:(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes)
 success	include/graphviz_plot.h	/^    success,$/;"	m	class:PlotRet	access:private
 unweighted	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/include/shortest_path.h	/^std::vector<Vertex> unweighted(GraphMat &graph, int id_start);$/;"	p	language:C++
 unweighted	/home/hzh/study/algorithm/Some_Data_Structure/Graph/Shortest_Path/src/shortest_path.cpp	/^vector<Vertex> unweighted(GraphMat &graph, int id_start) {$/;"	f	language:C++
