@@ -1,0 +1,12 @@
+digraph residual{
+b->s [label="2", fontcolor=darkgreen]
+a->s [label="3", fontcolor=darkgreen]
+a->b [label="1", fontcolor=darkgreen]
+a->c [label="1", fontcolor=darkgreen]
+a->d [label="3", fontcolor=darkgreen]
+c->a [label="2", fontcolor=darkgreen]
+d->b [label="2", fontcolor=darkgreen]
+d->a [label="1", fontcolor=darkgreen]
+t->c [label="2", fontcolor=darkgreen]
+t->d [label="3", fontcolor=darkgreen]
+}

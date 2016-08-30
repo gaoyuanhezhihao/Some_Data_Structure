@@ -1,0 +1,9 @@
+digraph flow{
+s->b [label="2", fontcolor=darkgreen]
+s->a [label="3", fontcolor=darkgreen]
+b->d [label="2", fontcolor=darkgreen]
+a->c [label="2", fontcolor=darkgreen]
+a->d [label="1", fontcolor=darkgreen]
+c->t [label="2", fontcolor=darkgreen]
+d->t [label="3", fontcolor=darkgreen]
+}

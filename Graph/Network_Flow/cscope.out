@@ -1,0 +1,1075 @@
+cscope 15 $HOME/study/algorithm/Some_Data_Structure/Graph/Shortest_Path -q 0000000092 0000005322
+	@include/graphviz_plot.h
+
+1 #iâdeà
+GRAPHVIZ_PLOT_HPP
+
+
+2 
+	#GRAPHVIZ_PLOT_HPP
+
+
+	)
+
+4 
+	~<¡ršg
+>
+
+5 
+	~<veùÜ
+>
+
+6 
+	~<f¡»am
+>
+
+7 
+	~<c¡dlib
+>
+
+8 
+	~<io¡»am
+>
+
+10 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+11 
+usšg
+ 
+	gG¿phD©aTy³
+ð
+¡d
+::
+veùÜ
+< std::vector<> >;
+
+12 þas 
+	cPlÙR‘
+{
+
+13 
+	msucûss
+,
+
+14 
+	mçž_to_Ý’_fže
+,
+
+17 
+PlÙR‘
+ 
+¶Ù_g¿ph
+(
+G¿phD©aTy³
+ cÚ¡ & 
+g¿ph
+, cÚ¡ 
+fže_Çme
+[], cÚ¡ 
+¡ršg
+ 
+Çme_g¿ph
+, 
+veùÜ
+<¡ršg> & 
+Çme_vtxes
+);
+
+19 þas 
+	cG¿phPlÙ”
+{
+
+20 
+	m´iv©e
+:
+
+21 
+¡d
+::
+¡ršg
+ 
+Çme_¡r
+;
+
+22 
+	m¡d
+::
+of¡»am
+ 
+fže_¡»am
+;
+
+23 
+	mpublic
+:
+
+24 
+G¿phPlÙ”
+(cÚ¡ * 
+Çme
+);
+
+25 
+boÞ
+ 
+add_lše
+(
+l
+, 
+r
+);
+
+26 ~
+G¿phPlÙ”
+();
+
+	@include/shortest_path.h
+
+1 #iâdeà
+SHORTEST_PATH_HPP
+
+
+2 
+	#SHORTEST_PATH_HPP
+
+
+	)
+
+4 
+	~<veùÜ
+>
+
+5 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+6 
+usšg
+ 
+	gG¿phM©
+ = 
+¡d
+::
+veùÜ
+<vector<> >;
+
+8 
+	sV”‹x
+{
+
+9 
+boÞ
+ 
+	mknown
+ = 
+çl£
+;
+
+10 
+	mdi¡
+ = -1;
+
+11 
+	mid
+ = -1;
+
+12 
+	m´ev_id
+ = -1;
+
+13 
+V”‹x
+(
+id
+):id(id){};
+
+15 
+	gveùÜ
+<
+	gV”‹x
+> 
+unweigh‹d
+(
+G¿phM©
+ &
+g¿ph
+, 
+id_¡¬t
+);
+
+	@src/graphviz_plot.cpp
+
+1 
+	~"g¿phviz_¶Ù.h
+"
+
+3 
+PlÙR‘
+ 
+¶Ù_g¿ph
+(
+G¿phD©aTy³
+ cÚ¡ & 
+g¿ph
+, cÚ¡ 
+fže_Çme
+[], cÚ¡ 
+¡ršg
+ 
+Çme_g¿ph
+, 
+veùÜ
+<¡ršg> & 
+Çme_vtxes
+) {
+
+4 
+	g¡d
+::
+of¡»am
+ 
+fže_¡»am
+(
+fže_Çme
+);
+
+5 if(
+	gçl£
+ =ð
+fže_¡»am
+.
+is_Ý’
+()) {
+
+6  
+PlÙR‘
+::
+çž_to_Ý’_fže
+;
+
+8 
+	gfže_¡»am
+ << "dig¿ph " << 
+	gÇme_g¿ph
+ << "{\n";
+
+9 
+	gcouÁ
+ = 
+g¿ph
+.
+size
+();
+
+10 
+	gr
+=0;
+
+11 
+	gc
+=0;
+
+13 
+	gr
+=0;r<
+	gcouÁ
+; ++„) {
+
+15 
+	gc
+=0;c<
+	gcouÁ
+;++c) {
+
+17 if(
+	gg¿ph
+[
+r
+][
+c
+] > 0){
+
+18 
+	gfže_¡»am
+ << 
+	gÇme_vtxes
+[
+r
+] << "->" <<‚ame_vtxes[
+c
+]<< "\n";
+
+22 
+	gfže_¡»am
+ << "}" << 
+	g’dl
+;
+
+23 
+¡ršg
+ 
+	gcmd
+{"dot -Tpng "};
+
+24 
+	gcmd
+ +ð
+fže_Çme
+;
+
+25 
+	gcmd
+ +ð(" -Ø./"+ 
+Çme_g¿ph
+ + ".png");
+
+26 
+	g¡d
+::
+cout
+ << 
+cmd
+ << 
+’dl
+;
+
+27 
+sy¡em
+(
+cmd
+.
+c_¡r
+());
+
+28  
+	gPlÙR‘
+::
+sucûss
+;
+
+	@src/main.cpp
+
+1 
+	~<io¡»am
+>
+
+2 
+	~<f¡»am
+>
+
+3 
+	~<¡ršg
+>
+
+4 
+	~<s¡»am
+>
+
+5 
+	~<veùÜ
+>
+
+6 
+	~<™”©Ü
+>
+
+7 
+	~<®gÜ™hm
+>
+
+8 
+	~"g¿phviz_¶Ù.h
+"
+
+9 
+	~"shÜ‹¡_·th.h
+"
+
+10 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+11 
+usšg
+ 
+	gG¿phM©
+ = 
+¡d
+::
+veùÜ
+<vector<> >;
+
+12 
+boÞ
+ 
+»ad_g¿ph
+(* 
+fže_Çme
+, 
+veùÜ
+<veùÜ<> > & 
+g¿ph
+, veùÜ<
+¡ršg
+> & 
+Çme_vtxes
+);
+
+14 
+	$maš
+(
+¬gc
+, ** 
+¬gv
+) {
+
+15 if(
+¬gc
+ < 2) {
+
+16 
+¡d
+::
+cout
+ << "E¼Ü: AˆL—¡ TwØArgum’ts." << 
+’dl
+;
+
+17 
+	`ex™
+(-1);
+
+19 
+¡d
+::
+veùÜ
+<veùÜ<> > 
+g¿ph
+;
+
+20 
+¡d
+::
+veùÜ
+<
+¡ršg
+> 
+Çme_vtxes
+;
+
+21 
+	`»ad_g¿ph
+(
+¬gv
+[1], 
+g¿ph
+, 
+Çme_vtxes
+);
+
+24 
+	`¶Ù_g¿ph
+(
+g¿ph
+,"t.dÙ", "nšja", 
+Çme_vtxes
+);
+
+25 
+	}
+}
+
+26 
+	$´št_g¿ph_m©
+(
+G¿phM©
+ & 
+g¿ph
+) {
+
+27 autØ
+™
+=
+g¿ph
+.
+	`cbegš
+(), 
+g¿ph_’d
+=g¿ph.
+	`ûnd
+();
+
+28 
+™
+ !ð
+g¿ph_’d
+) {
+
+29 autØ
+™_v”‹x
+=
+™
+->
+	`cbegš
+(), 
+’d_v”‹x
+=™->
+	`ûnd
+();
+
+30 
+™_v”‹x
+ !ð
+’d_v”‹x
+) {
+
+31 
+¡d
+::
+cout
+ << *
+™_v”‹x
+ << " ";
+
+32 ++ 
+™_v”‹x
+;
+
+34 
+¡d
+::
+cout
+<< std::
+’dl
+;
+
+35 ++ 
+™
+;
+
+37 
+	}
+}
+
+39 
+boÞ
+ 
+»ad_g¿ph
+(* 
+fže_Çme
+, 
+veùÜ
+<veùÜ<> > & 
+g¿ph
+, veùÜ<
+¡ršg
+> & 
+Çme_vtxes
+) {
+
+40 
+	g¡d
+::
+if¡»am
+ 
+šFže
+(
+fže_Çme
+);
+
+41 
+	g¡d
+::
+¡ršg
+ 
+lše
+;
+
+43 if(
+	gšFže
+.
+is_Ý’
+()) {
+
+44 
+	g¡d
+::
+g‘lše
+(
+šFže
+, 
+lše
+);
+
+45 
+	g¡d
+::
+i¡ršg¡»am
+ 
+iss
+(
+lše
+);
+
+46 
+	g¡d
+::
+cÝy
+(
+i¡»am_™”©Ü
+<
+¡ršg
+>(
+iss
+), i¡»am_™”©Ü<¡ršg> (), 
+¡d
+::
+back_š£¹”
+(
+Çme_vtxes
+));
+
+48 
+	g¡d
+::
+û¼
+<< "çžedØÝ’ fže." << 
+¡d
+::
+’dl
+;
+
+52 
+	g¡d
+::
+g‘lše
+(
+šFže
+, 
+lše
+)) {
+
+53 if(
+	glše
+[0] =ð'/' && 
+lše
+[1] == '/') {
+
+56 
+	g¡d
+::
+i¡ršg¡»am
+ 
+iss
+(
+lše
+);
+
+57 
+	gveùÜ
+<> 
+	gv”‹x
+{
+	g¡d
+::
+i¡»am_™”©Ü
+<>{
+iss
+}, std::istream_iterator<>{}};
+
+58 
+	gg¿ph
+.
+push_back
+(
+¡d
+::
+move
+(
+v”‹x
+));
+
+61  
+	gŒue
+;
+
+	@src/shortest_path.cpp
+
+1 
+	~"shÜ‹¡_·th.h
+"
+
+2 
+	~<veùÜ
+>
+
+3 
+	~<deque
+>
+
+4 
+	~<io¡»am
+>
+
+5 
+usšg
+ 
+Çme¥aû
+ 
+	g¡d
+;
+
+6 
+usšg
+ 
+	gG¿phM©
+ = 
+¡d
+::
+veùÜ
+<vector<> >;
+
+8 
+boÞ
+ 
+ÿlc_v”‹x_šfo
+(
+¡d
+::
+veùÜ
+<¡d::veùÜ<> > &
+g¿ph
+, std::veùÜ<¡d::veùÜ<> > & 
+v”‹x_Ãib
+);
+
+10 
+	gveùÜ
+<
+	gV”‹x
+> 
+	$unweigh‹d
+(
+G¿phM©
+ &
+g¿ph
+, 
+id_¡¬t
+) {
+
+12 
+veùÜ
+<
+V”‹x
+> 
+	`vts
+(
+g¿ph
+.
+	`size
+(), 
+	`V”‹x
+(0));
+
+13 
+veùÜ
+<veùÜ<> > 
+	`v”t_Ãib
+(
+g¿ph
+.
+	`size
+(), vector<> ());
+
+14 
+	`ÿlc_v”‹x_šfo
+(
+g¿ph
+, 
+v”t_Ãib
+);
+
+15 
+size_t
+ 
+i
+ = 0;
+
+16 
+i
+ = 0; i < 
+vts
+.
+	`size
+();++i) {
+
+17 
+vts
+[
+i
+].
+id
+ = i;
+
+20 
+¡d
+::
+deque
+<> 
+Ãxt_vxes
+;
+
+21 
+Ãxt_vxes
+.
+	`push_back
+(
+id_¡¬t
+);
+
+22 
+vts
+[
+id_¡¬t
+].
+di¡
+ = 0;
+
+24 
+çl£
+ =ð
+Ãxt_vxes
+.
+	`em±y
+()) {
+
+25 
+id
+ = 
+Ãxt_vxes
+[0];
+
+26 
+cout
+ << 
+id
+<<'('<< 
+vts
+[id].
+di¡
+<<')' << "-->";
+
+27 
+Ãxt_vxes
+.
+	`pÝ_äÚt
+();
+
+29 autØ&
+n
+:
+v”t_Ãib
+[
+id
+]) {
+
+30 if(
+vts
+[
+n
+].
+di¡
+ == -1) {
+
+31 
+vts
+[
+n
+].
+di¡
+ = vts[
+id
+].dist +1;
+
+32 
+vts
+[
+n
+].
+´ev_id
+ = 
+id
+;
+
+33 
+Ãxt_vxes
+.
+	`push_back
+(
+n
+);
+
+37  
+vts
+;
+
+38 
+	}
+}
+
+40 
+boÞ
+ 
+ÿlc_v”‹x_šfo
+(
+¡d
+::
+veùÜ
+<¡d::veùÜ<> > &
+g¿ph
+, std::veùÜ<¡d::veùÜ<> > & 
+v”‹x_Ãib
+) {
+
+41 if(
+g¿ph
+.
+size
+() == 0 || graph[0].size() == 0 || graph.size() != graph[0].size()) {
+
+42 
+¡d
+::
+cout
+ << "!E¼Ü: g¿ph fÜm© i wrÚg..." << std::
+’dl
+;
+
+43 
+ex™
+(-1);
+
+45 
+size_t
+ 
+	gr
+ð0, 
+	gc
+=0;
+
+46 
+	gr
+=0;r<
+	gg¿ph
+.
+size
+();++r) {
+
+47 
+	gc
+=0;c<
+	gg¿ph
+[0].
+size
+();++c) {
+
+48 if(
+	gg¿ph
+[
+r
+][
+c
+] > 0 ) {
+
+49 
+	gv”‹x_Ãib
+[
+r
+].
+push_back
+(
+c
+);
+
+53  
+	gŒue
+;
+
+56 
+	gveùÜ
+<
+	gV”‹x
+> 
+Dijk¡¿
+(
+G¿phM©
+ & 
+g¿ph
+, 
+¡d
+::
+veùÜ
+<
+¡ršg
+> & 
+Çme_vtxes
+ ) {
+
+57 
+veùÜ
+<
+V”‹x
+> 
+vt_·th
+(
+g¿ph
+.
+size
+(), Vertex(0));
+
+58 
+	gveùÜ
+<veùÜ<> > 
+v”t_Ãib
+(
+g¿ph
+.
+size
+(), 
+veùÜ
+<> ());
+
+59 
+ÿlc_v”‹x_šfo
+(
+g¿ph
+, 
+v”t_Ãib
+);
+
+	@
+1
+.
+1
+/usr/include
+5
+105
+include/graphviz_plot.h
+include/shortest_path.h
+src/graphviz_plot.cpp
+src/main.cpp
+src/shortest_path.cpp
