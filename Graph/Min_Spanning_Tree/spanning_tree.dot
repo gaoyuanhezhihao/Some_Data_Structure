@@ -1,0 +1,8 @@
+graph spanning_tree{
+v1 -- v2;
+v4 -- v3;
+v1 -- v4;
+v7 -- v5;
+v7 -- v6;
+v4 -- v7;
+}
