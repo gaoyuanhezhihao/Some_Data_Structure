@@ -2,6 +2,7 @@
 #include <iostream>
 #include "min_sp_tree.h"
 #include "BinaryHeap.h"
+#include "disjoint_set.h"
 
 using namespace std;
 using GraphMat = std::vector<vector<int> >;
@@ -10,6 +11,10 @@ bool calc_vertex_info(std::vector<std::vector<int> > &graph, std::vector<std::ve
 int find_min_dist_id(BinaryHeap<NodeHeap> & heap_vt, const vector<Vertex> & vt_path);
 bool check_graph(GraphMat & graph);
 //=== inline function ===
+std::ostream & operator << (std::ostream & output, const Edge & ed){
+    output << '(' << ed.v << ',' << ed.w << ',' << ed.len << ')' ;
+    return output;
+}
 vector<Vertex> prim_heap(GraphMat & graph)  {
     //-- #1 init.
     check_graph(graph);
@@ -92,4 +97,38 @@ bool calc_vertex_info(std::vector<std::vector<int> > &graph, std::vector<std::ve
     return true;
 }
 
-
+std::vector<std::vector<int> > kruskal(GraphMat & graph) {
+    //-- #1 init.
+    DisjointSet forest(graph.size());
+    BinaryHeap<Edge> edg_heap(graph.size() * graph.size() / 2 );
+    vector<vector<int> > pathes(graph.size(), vector<int> () );
+    size_t r = 0, c= 0;
+    for(r= 0;r<graph.size(); ++r) {
+        for(c = r+1; c< graph.size(); ++c) {
+            if(graph[r][c] > 0) {
+                edg_heap.insert(Edge(r, c, graph[r][c]));
+                //cout << "heap insert:" << r << ',' << c << ',' << graph[r][c] << endl;
+            }
+        }
+    }
+    edg_heap.print();
+    //-- #2 select edges.
+    Edge edge_now(-1, -1, -1);
+    for(size_t i = 0; i < graph.size()-1; ) {
+        edg_heap.deleteMin(edge_now);
+        cout << edge_now.v << ',' << edge_now.w << ',' << edge_now.len << endl;
+        forest.print();
+        if(forest.is_same_set(edge_now.v, edge_now.w)) {
+            continue;
+        } else {
+            /*this edge is eccepted.*/
+            forest.SetUnion(edge_now.v, edge_now.w);
+            auto v = edge_now.v < edge_now.w ?  edge_now.v : edge_now.w;
+            auto w = edge_now.w > edge_now.v ? edge_now.w : edge_now.v;
+            pathes[v].push_back(w);
+            ++i;
+            cout << "v:" << v << "w:" <<w << endl;
+        }
+    }
+    return pathes;
+}

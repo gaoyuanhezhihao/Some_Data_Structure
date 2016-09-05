@@ -9,16 +9,16 @@ class BinaryHeap
 {
 public:
     //---function---
-	explicit BinaryHeap(int capacity = 100);
+    explicit BinaryHeap(int capacity = 100): currentSize(0){
+        array.reserve(capacity);
+    }
 	explicit BinaryHeap(const std::vector<Comparable> & items);
-
     bool isEmpty() const {
         return 0 == currentSize;
     }
 	const Comparable & findMin() const;
 
-	void insert( const Comparable & x);
-    void insert(const Comparable && x);
+    void insert(Comparable const & x);
 	void deleteMin();
 	void deleteMin( Comparable & minItem);
 	void makeEmpty();
@@ -30,6 +30,7 @@ private:
     void buildHeap();
     void percolateDown( int hole );
 };
+
 template <typename Comparable>
 void BinaryHeap<Comparable>::print() {
     int i = 0;
@@ -45,7 +46,7 @@ void BinaryHeap<Comparable>::print() {
 //}
 
 template <typename Comparable>
-void BinaryHeap<Comparable>::insert(const Comparable && x)
+void BinaryHeap<Comparable>::insert(const Comparable & x)
 {
     if(currentSize == array.size() - 1 )
         array.resize( array.size() * 2);
@@ -54,6 +55,7 @@ void BinaryHeap<Comparable>::insert(const Comparable && x)
     Comparable copy = x;
 
     array[0] = std::move( copy );
+    /*bubble up.*/
     for(; x< array[hole / 2]; hole /= 2)
         array[ hole  ] = std::move( array[ hole / 2] );
     array[ hole ] = std::move( array[ 0 ] );
@@ -93,23 +95,26 @@ void BinaryHeap<Comparable>::percolateDown(int hole)
 {
     int child = 0;
     Comparable tmp = array[hole];
-    for(;hole*2 < currentSize;hole = child)
+    for(;hole*2 <=  currentSize;hole = child)
     {
         child = hole * 2;
-        if(array[child] < array[child+1])
+        //cout << "***" << array[child] << ',' << array[child+1] << endl;
+        if(array[child] > array[child+1])
         {
             child++;
         }
-        if(array[hole] > array[child])
+        //cout << ".." << array[hole] << ".." << array[child] << endl;
+        if(tmp > array[child])
         {
-            array[hole] = std::move(array[child]);
+            array[hole] = array[child];
+            //cout << "hole:" << hole << ", child" << child << endl;
         }
         else
         {
             break;
         }
     }
-    array[hole] = std::move(tmp);
+    array[hole] = tmp;
 }
 template <typename Comparable>
 BinaryHeap<Comparable>::BinaryHeap( const vector<Comparable> & items )

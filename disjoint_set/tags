@@ -1,0 +1,32 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUILDDIR	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^BUILDDIR := build$/;"	m	language:Make
+CC	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^CC :=g++$/;"	m	language:Make
+CFLAGS	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^CFLAGS:= -std=c++11 $/;"	m	language:Make
+DISJOINT_SET_H	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	2;"	d	language:C++
+DisjointSet	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        DisjointSet(int size):set_roots(size, -1){ }$/;"	f	language:C++	class:DisjointSet
+DisjointSet	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^class DisjointSet {$/;"	c	language:C++
+INC	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^INC:= -I include$/;"	m	language:Make
+LD	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^LD :=g++$/;"	m	language:Make
+LDFLAGS	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^LDFLAGS:= $/;"	m	language:Make
+OBJECTS	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^OBJECTS:=$(patsubst $(SRCDIR)\/%, $(BUILDDIR)\/%,$(SOURCES:.$(SRCEXT)=.o))$/;"	m	language:Make
+SOURCES	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^SOURCES:=$(shell find $(SRCDIR) -type f -name *.$(SRCEXT))$/;"	m	language:Make
+SRCDIR	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^SRCDIR := src$/;"	m	language:Make
+SRCEXT	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^SRCEXT:=cpp$/;"	m	language:Make
+SetUnion	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        bool SetUnion(int id1, int id2);$/;"	p	language:C++	class:DisjointSet
+SetUnion	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/src/disjoint_set.cpp	/^bool DisjointSet::SetUnion(int id1, int id2) {$/;"	f	language:C++	class:DisjointSet
+TARGET	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/makefile	/^TARGET :=bin\/runner$/;"	m	language:Make
+find	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        int find(int dst_id); \/\/ return root id.$/;"	p	language:C++	class:DisjointSet
+find	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/src/disjoint_set.cpp	/^int DisjointSet::find(int dst_id) {$/;"	f	language:C++	class:DisjointSet
+is_same_set	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        bool is_same_set(int l_id, int r_id);$/;"	p	language:C++	class:DisjointSet
+is_same_set	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/src/disjoint_set.cpp	/^bool DisjointSet::is_same_set(int l_id, int r_id) {$/;"	f	language:C++	class:DisjointSet
+main	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/src/main.cpp	/^int main(int argc, char **argv)$/;"	f	language:C++
+plot	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        bool plot(const char name_plot[]);$/;"	p	language:C++	class:DisjointSet
+plot	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/src/disjoint_set.cpp	/^bool DisjointSet::plot(const char name_plot[]) {$/;"	f	language:C++	class:DisjointSet
+print	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        bool print();$/;"	p	language:C++	class:DisjointSet
+print	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/src/disjoint_set.cpp	/^bool DisjointSet::print() {$/;"	f	language:C++	class:DisjointSet
+set_roots	/home/hzh/study/algorithm/Some_Data_Structure/disjoint_set/include/disjoint_set.h	/^        std::vector<int> set_roots;$/;"	m	language:C++	class:DisjointSet

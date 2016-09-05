@@ -1,0 +1,8 @@
+graph sp_tree_kruskal{
+v1 -- v4;
+v1 -- v2;
+v3 -- v4;
+v4 -- v7;
+v5 -- v7;
+v6 -- v7;
+}

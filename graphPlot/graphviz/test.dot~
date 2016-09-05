@@ -1,0 +1,9 @@
+digraph graphname{
+
+                T [label="Teacher"]      // node T
+                P [label="Pupil"]  // node P
+
+
+                T->P [label="Instructions", fontcolor=darkgreen] // edge T->P
+		Q [label="single"] // node Q
+}
