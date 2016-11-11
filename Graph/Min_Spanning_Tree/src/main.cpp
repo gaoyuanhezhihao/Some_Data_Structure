@@ -8,7 +8,7 @@
 #include "graphviz_plot.h"
 #include "min_sp_tree.h"
 
-#define PRIM_HEAP 
+#define KRUSKAL 
 using namespace std;
 using GraphMat = std::vector<vector<int> >;
 bool read_graph(char * file_name, vector<vector<int> > & graph, vector<string> & name_vtxes);
@@ -29,6 +29,12 @@ int main(int argc, char ** argv) {
     plot_undigraph(graph, "total_map", name_vtxes);
     plot_sp_tree(sp_tree, "spanning_tree", name_vtxes);
 #endif //PRIM_HEAP 
+#ifdef KRUSKAL
+    cout << "=== Kruskal ===" << endl;
+    std::vector<vector<int> >  pathes = kruskal(graph);
+    plot_undigraph(graph, "total_map", name_vtxes);
+    plot_kruskal_sp_tree(pathes, "sp_tree_kruskal", name_vtxes);
+#endif //KRUSKAL
     //print_graph_mat(graph);
     //unweighted(graph, 2);
     //plot_graph(graph,"t.dot", "ninja", name_vtxes);

@@ -28,6 +28,26 @@ PlotRet plot_graph(GraphDataType const & graph, const char file_name[], const st
     system(cmd.c_str());
     return PlotRet::success;
 }
+PlotRet plot_kruskal_sp_tree(const std::vector<std::vector<int> >& pathes, const string name_tree,  const std::vector<std::string> & name_vtxes) {
+    const string file_name = name_tree + ".dot";
+    ofstream file_stream(file_name);
+    if(false == file_stream.is_open())  {
+        return PlotRet::fail_to_open_file;
+    }
+    file_stream << "graph " << name_tree << "{\n" ;
+    for(size_t i = 0; i < pathes.size(); ++ i) {
+        for(auto n:pathes[i]) {
+            file_stream << name_vtxes[i] << " -- " << name_vtxes[n] << ";\n";
+        }
+    }
+    file_stream << "}" << endl;
+    string cmd{"dot -Tpng "};
+    cmd += file_name;
+    cmd += (" -o ./"+ name_tree+ ".png");
+    std::cout << cmd << endl;
+    system(cmd.c_str());
+    return PlotRet::success;
+}
 
 PlotRet plot_sp_tree(std::vector<Vertex> & sp_tree, const string name_tree, vector<string> & name_vtxes) {
     const string file_name = name_tree+ ".dot";
