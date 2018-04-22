@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/aho_corasick.hpp
+memory
+-
+array
+-
+vector
+-
+string
+-
+queue
+-
+utility
+-
+fstream
+-
+iostream
+-
+cassert
+-
+
+/home/hzh/study/algorithm/Some_Data_Structure/string/AC_Tree/src/plot.cpp
+iostream
+-
+string
+-
+aho_corasick.hpp
+/home/hzh/study/algorithm/Some_Data_Structure/string/AC_Tree/src/aho_corasick.hpp
+

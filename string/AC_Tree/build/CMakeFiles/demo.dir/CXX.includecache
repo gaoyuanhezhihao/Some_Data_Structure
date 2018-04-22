@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hzh/study/algorithm/Some_Data_Structure/string/AC_Tree/src/main.cpp
+list
+-
+iostream
+-
+fstream
+-
+utility
+-
+vector
+-
+string
+-
+queue
+-
+limits
+-
+sstream
+-
+array
+-
+cassert
+-
+stdio.h
+-
+
